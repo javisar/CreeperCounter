@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="State" >       
+        <Preference		android:key="state_player1_vida"			android:summary="state_player1_vida"			android:title="state_player1_vida" />
+        <Preference		android:key="state_player2_vida"			android:summary="state_player2_vida"			android:title="state_player2_vida" />
+        
+        <Preference		android:key="state_player1_modificador"		android:summary="state_player1_modificador"		android:title="state_player1_modificador" />
+        <Preference		android:key="state_player2_modificador"		android:summary="state_player2_modificador"		android:title="state_player2_modificador" />
+        
+        <Preference		android:key="state_player1_historia"		android:summary="state_player1_historia"		android:title="state_player1_historia" />
+        <Preference		android:key="state_player2_historia"		android:summary="state_player2_historia"		android:title="state_player2_historia" />
+        
+	</PreferenceCategory>
+</PreferenceScreen>

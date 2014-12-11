@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Creeper Counter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="reset">Reset</string>
+    <string name="clear_history">Clear history</string>
+</resources>

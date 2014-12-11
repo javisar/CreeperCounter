@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/basic_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="#ff0099ff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/jugador1_menos5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="66dp"
+                        android:text=" -5 "
+                        android:textSize="20.0sp" />
+
+                    <Button
+                        android:id="@+id/jugador1_menos1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"     
+                        android:textSize="30.0sp"                   
+                        android:text=" -1 " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical" >
+					
+                    <ScrollView android:id="@+id/jugador1_historia_scroll"
+					    android:layout_width="fill_parent"
+					    android:layout_height="80sp">
+	                    <TextView
+	                        android:id="@+id/jugador1_historia"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center"
+	                        android:textColor="#FF0000"
+	                        android:text="" />
+					</ScrollView>
+                    <TextView
+                        android:id="@+id/jugador1_vida"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textSize="100.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/jugador1_mas5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="66dp"
+                        android:textSize="20.0sp"
+                        android:text=" +5 " />
+
+                    <Button
+                        android:id="@+id/jugador1_mas1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textSize="30.0sp"
+                        android:text=" +1 " />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffaaaaaa"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/jugador1_modificador_menos1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.1"
+                    android:textSize="20.0sp"
+                    android:text=" -1 " />
+
+                <TextView
+                    android:id="@+id/jugador1_modificador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.2"
+                    android:text="0"
+                    android:textSize="30.0sp" />
+
+                <Button
+                    android:id="@+id/jugador1_modificador_mas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.1"
+                    android:textSize="20.0sp"
+                    android:text=" +1 " />
+            </LinearLayout>
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="#ffeeeeee"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/jugador2_menos5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="66dp"    
+                        android:textSize="20.0sp"            
+                        android:text=" -5 " />
+
+                    <Button
+                        android:id="@+id/jugador2_menos1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"     
+                        android:textSize="30.0sp"                   
+                        android:text=" -1 " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical" >
+
+                    <ScrollView android:id="@+id/jugador2_historia_scroll"
+					    android:layout_width="fill_parent"
+					    android:layout_height="80sp">
+	                    <TextView
+	                        android:id="@+id/jugador2_historia"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center"
+	                        android:textColor="#FF0000"
+	                        android:text="" />
+					</ScrollView>
+                    <TextView
+                        android:id="@+id/jugador2_vida"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textSize="100.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/jugador2_mas5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="66dp"
+                        android:textSize="20.0sp"
+                        android:text=" +5 " />
+
+                    <Button
+                        android:id="@+id/jugador2_mas1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textSize="30.0sp"
+                        android:text=" +1 " />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffaaaaaa"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/jugador2_modificador_menos1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.1"
+                    android:textSize="20.0sp"
+                    android:text=" -1 " />
+
+                <TextView
+                    android:id="@+id/jugador2_modificador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.2"
+                    android:text="0"
+                    android:textSize="30.0sp" />
+
+                <Button
+                    android:id="@+id/jugador2_modificador_mas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.1"
+                    android:textSize="20.0sp"
+                    android:text=" +1 " />
+            </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>
